@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  Pokedex3
 //
-//  Created by Juha Kesti on 10/01/17.
 //  Copyright © 2017 nauski. All rights reserved.
 //
 
