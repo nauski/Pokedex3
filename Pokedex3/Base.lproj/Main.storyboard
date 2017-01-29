@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Vd5-F7-np7" secondAttribute="trailing" constant="8" id="x6C-VJ-hDY"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-5m-89b">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-5m-89b">
                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="CYA-0g-xdE"/>
@@ -142,11 +142,46 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="sXy-l7-796" id="qFD-Wt-ECB"/>
+                        <outlet property="searchBar" destination="Ygb-5m-89b" id="45s-Ra-V48"/>
+                        <segue destination="VwJ-Am-jx5" kind="show" identifier="PokemonDetailVC" id="9b9-U5-iBM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="88.799999999999997" y="137.18140929535232"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="j7r-eL-mx4">
+            <objects>
+                <viewController id="VwJ-Am-jx5" customClass="PokemonDetailVC" customModule="Pokedex3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wx6-lB-0Xk"/>
+                        <viewControllerLayoutGuide type="bottom" id="TJm-aL-mnl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VBT-Ub-aHi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4j-Jq-Tsc">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31764705879999999" green="0.64313725489999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K4j-Jq-Tsc" firstAttribute="centerX" secondItem="VBT-Ub-aHi" secondAttribute="centerX" id="Cka-2p-2re"/>
+                            <constraint firstItem="K4j-Jq-Tsc" firstAttribute="centerY" secondItem="VBT-Ub-aHi" secondAttribute="centerY" id="UkM-Yg-Olh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="K4j-Jq-Tsc" id="XPf-qg-C7P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZO-Jo-Mzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="137"/>
         </scene>
     </scenes>
     <resources>

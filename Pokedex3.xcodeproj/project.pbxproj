@@ -19,6 +19,7 @@
 		F103E60F1E2C0000004C433B /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F103E60E1E2C0000004C433B /* pokemon.ttf */; };
 		F103E6141E2C02DB004C433B /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = F103E6131E2C02DB004C433B /* music.png */; };
 		F103E6161E2C02E8004C433B /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F103E6151E2C02E8004C433B /* music.mp3 */; };
+		F12055751E3E1308009E695F /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12055741E3E1308009E695F /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F103E60E1E2C0000004C433B /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		F103E6131E2C02DB004C433B /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		F103E6151E2C02E8004C433B /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		F12055741E3E1308009E695F /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F103E5F41E252D8B004C433B /* ViewController.swift */,
+				F12055741E3E1308009E695F /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				F103E60B1E2B913E004C433B /* PokeCell.swift in Sources */,
 				F103E5F51E252D8B004C433B /* ViewController.swift in Sources */,
 				F103E5F31E252D8B004C433B /* AppDelegate.swift in Sources */,
+				F12055751E3E1308009E695F /* PokemonDetailVC.swift in Sources */,
 				F103E6081E2535A3004C433B /* Pokemon.swift in Sources */,
 				F103E60D1E2B9BD0004C433B /* csv.swift in Sources */,
 			);
@@ -369,6 +373,7 @@
 				F103E6031E252D8B004C433B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
